@@ -1,0 +1,18 @@
+#DICE QUE NO ES UN GRAFO CONECTADO y a veces que si lo es..depende de la corrida. 
+
+#ME QUEDARON 80 GENES.
+
+#LOS QUE ELIMINO SON:7  8 10 22 23 24 29 32 36 55 57 58 60 62 65 73 78 85 86 99
+
+#obtengo la W  y veo lo siguiente 
+*la muestra 20 se obtiene como combinacion de las muetras 18,19,21 y 22 con los coeficientes: 0.3134309 0.1038995 0.2393224 0.3433472.
+
+* la muestra 22 se obtiene de 20,21,23,24 y 25 con coeficientes: 0.30338527 0.02200056 0.23342489 0.23147504 0.20971424
+
+realmente lo que esperaria es que el coeficiente para describir a la muestra 22 con la muestra 20 sea 1/w22 donde w22 = 0.3433472. pero me da 0.30338527... 
+
+cuando corro el algoritmo solo para la muestra 20 veo que el 22 aporta en 0.3433472 y cuando corro para la muestra 22 me dice que el 20 aporta en 0.30338527 pero tambien lo que pasa es que los vecinos del 22 son 20 21 23 24 25 
+
+si yo despejo de loque me sale de la sample 20 diria que la sample 22 se describe con el 18,19,20 y 21 pero en verdad son otros sus vecinos..
+
+#ahora diagonalizo y lo que veo es que mi autovalor mas chico (porque eigen() lo que hace es ordenar de mayor a menor)es algo por e-16 (muy cercano a 0) y entonces, da un autovector asociado constante. entonces.. me quedocon los otros 2 siguientes 

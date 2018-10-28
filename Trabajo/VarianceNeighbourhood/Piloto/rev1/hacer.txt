@@ -1,0 +1,1 @@
+-ver que hace la funcion sd como std R

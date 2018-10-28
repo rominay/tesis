@@ -1,0 +1,5 @@
+para el gen 2 a tiempo 20 tomando como entorno 
+tiempos 18,19,20,21,22 y a los genes 1,2,3 
+la primeraSuma = 457.9665
+
+para el gen2 para todas las samples encuentra los mismos tiempos vecinos... 19 21 22 18 
