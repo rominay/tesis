@@ -1,29 +1,7 @@
-setwd("C:\\Users\\Elizabeth\\Desktop\\Tesis-Redes\\Practica-R\\PracticaRTesis\\VarianceNeighbourhood\\rev3\\conShuffle\\MatrixLowDim\\buenShuffle\\ahoraSi\\pruebas")
 
-
-t = seq(0,80,1)      
-genesTotal = 500 
-stdd = 1 
-perc = 0.1
-matrixx = matrizExpr(genesTotal, t, stdd, perc)
-matrix = matrixx[,1:length(t)]
-genesShuffled = matrixx[,length(t)+1]
-grupos = 5
-adjConectado = adjConectado(matrix,t,grupos,stdd)
-
-filt = filtrado(adjConectado,matrix,stdd, perc)
-
-matrixFiltr = filt[,1:length(t)]
-genesFilt = filt[,length(t)+1]
-
-length(matrixFiltr[,1])
-
-length(intersect(genesShuffled,genesFilt))-1
-
-#######
 #voy a correr para un dado std para varios perc 
 
-setwd("C:\\Users\\Elizabeth\\Desktop\\Tesis-Redes\\Practica-R\\PracticaRTesis\\VarianceNeighbourhood\\rev3\\conShuffle\\MatrixLowDim\\buenShuffle\\ahoraSi\\pruebas2")
+setwd("C:\\Users\\Elizabeth\\Desktop\\Tesis-Redes\\Practica-R\\PracticaRTesis\\VarianceNeighbourhood\\ahoraSi\\EstudioOrdenTemporal")
 ####llamar funciones
 #matrixExp = dget("matrixExp.R")
 
